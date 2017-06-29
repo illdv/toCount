@@ -1,0 +1,23 @@
+button{
+  width: 20%;
+  height: 10vh;
+  display: block;
+  border-radius: 10px;
+  margin: 15vh auto 0 auto;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+button:focus{
+  outline: none;
+}
+
+div{
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+p{
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
