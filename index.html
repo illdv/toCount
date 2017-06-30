@@ -8,19 +8,23 @@
 <body>
   <button  type="button" id="btn">to count</button>
   <div id="result"> </div>
-  <p>с в н</p>
+  <p>н с в</p>
   <script>
   function toCount() {
 var calc = prompt('');
 
-var с = calc.split("с").length - 1; 
-var в = calc.split("в").length - 1;
-var н = calc.split("н").length - 1;
-var result = [с, в, н];
+var н1 = calc.split("н/").length - 1;
+var н2 = calc.split("/н").length - 1;
+var с1 = calc.split("с/").length - 1;
+var с2 = calc.split("/с").length - 1;
+var в1 = calc.split("в/").length - 1;
+var в2 = calc.split("/в").length - 1;
+
+var result = [ н1, н2, с1, с2, в1, в2 ];
 
 
-   
-  document.getElementById('result').innerHTML = (result[0] + "/" +  result[1] + "/"  + result[2]);
+
+  document.getElementById('result').innerHTML = (result[0] + "/" +  result[1] + "."  +   result[2] + "/" + result[3] + "." + result[4] + "/" + result[5]);
 
 }
     document.getElementById('btn').addEventListener('click', toCount);
